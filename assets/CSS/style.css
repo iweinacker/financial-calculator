@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     color: #3a3a3a;
 }
@@ -73,7 +73,9 @@ h2 {
 }
 
 #divided-header {
+
     display: flex;
+
 }
 
 
@@ -109,10 +111,19 @@ p {
     font-size: 14px;
 }
 
-.title2 {
+.Instructions h1 {
     font-size: 20px;
 }
 
+.steps {
+    margin-left: 300px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
 
 /*budget-calculator*/
 
@@ -120,18 +131,94 @@ p {
     height: 600px;
 }
 
+#budget-calculator h1 {
+    font-size: 20px;
+}
+
+
 #left-about {
     padding-top: 30px;
-    width: 50;
+    height: 100vh;
+    width: 50%;
     float: left;
     background-color: orange;
 }
 
 #right-about {
     padding-top: 30px;
-    width: 50;
+    height: 100vh;
+    width: 50%;
     float: right;
     background-color: blue;
+}
+
+.left-about-heading {
+    width: 100%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.left-about-heading h2 {
+    text-align: center;
+}
+
+.right-about-heading {
+    width: 100%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: center;
+}
+
+#title-2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 200%;
+}
+
+/* form style */
+
+.form-budget {
+    width: 400px;
+    background: green;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.form-budget h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+}
+
+.form-budget .botons {
+    width: 100%;
+    border: none;
+    background: wheat;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+
+
 }
 
 /* footer */
