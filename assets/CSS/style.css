@@ -14,7 +14,7 @@ body {
 
 h1,
 h2 {
-    font-family: Oswald, sans-serif;
+    font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
@@ -80,7 +80,7 @@ h2 {
 
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     color: #3a3a3a;
 }
@@ -128,7 +128,7 @@ hr {
 /*budget-calculator*/
 
 #budget-calculator {
-    height: 600px;
+    height: 100vh;
 }
 
 #budget-calculator h1 {
@@ -185,9 +185,9 @@ hr {
 /* form style */
 
 .form-budget {
-    width: 400px;
+    width: 200px;
     background: green;
-    padding: 30px;
+    padding: 10px;
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
@@ -201,9 +201,9 @@ hr {
 }
 
 .controls {
-    width: 100%;
+    width: 30%;
     background: white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid black;
@@ -217,7 +217,6 @@ hr {
     color: black;
     margin: 16px 0;
     font-size: 16px;
-
 
 }
 
