@@ -184,85 +184,59 @@ hr {
 
 /* form style */
 
-#calculator {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.table{
-    font-family: sans-serif;
-    height: 30%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    color:black
-}
-table  {
-    border-collapse: collapse;
-    box-shadow: 0 5px 10px gray;
-    background-color: white;
-    overflow: hidden;
-}
-
-thead {
-    background: blue;
-}
-
-th {
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0,1rem;
-    font-weight: 900;
-}
-
-td {
-    padding: 1rem 2rem;
-}
-
-.amount {
-    text-align: right;
-}
-
-/*Color alternating rows*/
-tr:nth-child(even){
-    background-color:lightblue;
-}
-
-.form-budget {
-    width: 600px;
-    background: green;
-    padding: 10px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: black;
-}
-
-.form-budget h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.controls {
-    width: 30%;
-    background: white;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid black;
-}
-
-.form-budget .botons {
-    width: 100%;
-    border: none;
-    background: wheat;
-    padding: 12px;
-    color: black;
-    margin: 16px 0;
+.wrapper {
+    width: 90%;
     font-size: 16px;
-
+    max-width: 43.75em;
+    margin: 1em auto;
 }
+
+.container{
+    width: 100%;
+}
+.sub-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper h3 {
+    color: #363d55;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.container input {
+    display: block;
+    width: 100%;
+    padding: 0.6em 0.3em;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.3em;
+    color: #414a67; 
+    outline: none;
+    font-weight: 400;
+}
+.container input:focus {
+    border-color: #587ef4;
+}
+
+.total-amount-container, .user-amount-container {
+    background-color: #ffffff;
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+
 
 /* footer */
 
