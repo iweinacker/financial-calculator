@@ -80,3 +80,29 @@ const listCreator = (expenseName, expenseValue) => {
     sublistContent.appendChild(deleteButton);
     document.getElementById("list").appendChild (sublistContent);
 };
+
+//Function To Add Expenses 
+
+checkAmountButton.addEventListener("click", () => {
+    //empty checks
+    if(!userAmount.value || !productTitle.value) {
+        productTitleError.classList.remove("hide");
+        return false;
+    };
+    //Enable buttons
+    disableButtons(false);
+    //expense
+    let expenditure = parseInt(userAmount.value);
+    //Total expense (existint = new)
+    let sum = parseInt(expenditureValue.innerText) + expenditure;
+    expenditureValue.innerText = sum;
+    //Total balance (budget - total expense)
+    const totalBalance = tempAmount - sum;
+    balanceValue.innerText = totalBalance;
+    //create list
+    listCreator(productTitle.value, userAmount.value);
+    //empty inputs
+    productTitle.value = "";
+    userAmount.value = "";
+
+});
