@@ -56,71 +56,44 @@
     </section>
     <hr>
     <br>
-    
+
     <h2 id="title-2">Monthly Budget Calculator</h2>
 
 
 
     <section id="Calculator">
-        <div class="table">
-            <Table>
-                <tr>
-                    <td>Income / Expenses</td>
-                    <td>Total</td>
-                </tr>
-                <tr>
-                    <td>Salary / Wages</td>
-                    <td class="amount">0</td>
-                </tr>
-                <tr>
-                    <td>Oher sources of income</td>
-                    <td class="amount">0</td>
-                </tr>
-                <tr>
-                    <td>Rent / Housing</td>
-                    <td class="amount">0</td>
-                </tr>
-                <tr>
-                    <td>Transportation</td>
-                    <td class="amount">0</td>
-                </tr>
-                <tr>
-                    <td>Health</td>
-                    <td class="amount">0</td>
-                </tr>
-                <tr>
-                    <td>Personal</td>
-                    <td class="amount">0</td>
-                </tr>
-                <tr>
-                    <td>Savings</td>
-                    <td class="amount">0</td>
-                </tr>
-            </Table>
-            <br>
+       <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <!--Budget-->
+                <div class="total-amount-container">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="budget-error">Value cannot be empty or negative</p>
+                    <input type="number" id="total-amount" placeholder="Enter Total Amount">
+                    <button class="submit" id="total-amount-button">Set Budget</button>
+                </div>
 
-            <Table>
-                <h2 id="title-2">Summary</h2>
-                <tr>
-                    <td>Total Income</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Total Expenses</td>
-                    <td class="amount">0</td>
-                </tr>
-                <tr>
-                    <td>Remaining Monthly Balance</td>
-                    <td class="amount">0</td>
-                </tr>
-            </Table>
+                <!--Expenditure-->
+                <div class="user-amount-containe">
+                    <h3>expenses</h3>
+                    <p class="hide error" id="product-title-error">
+                        Values cannot be empty
+                    </p>
+                    <input type="text" class="product-title" placeholder="Enter Title of product">
+                    <input type="number" id="user-amount" placeholder="Ener Cost of Product">
+
+                    <button class="submit" id="check-amount">Check Amount</button>
+                </div>
+            </div>
+            <!--Output-->
+
         </div>
-
+       </div>
     </section>
 
     <hr>
 
-    
+
     <footer>
         <ul class="social-networks">
             <li>

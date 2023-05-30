@@ -204,6 +204,10 @@ table  {
     overflow: hidden;
 }
 
+thead {
+    background: blue;
+}
+
 th {
     padding: 1rem 2rem;
     text-transform: uppercase;
