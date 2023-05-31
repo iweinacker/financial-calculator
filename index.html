@@ -11,57 +11,6 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <h1 id="logo">Montly Budget Calculator</h1>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="#">Sign Up</a>
-                </li>
-                <li>
-                    <a href="#">Gallery</a>
-                </li>
-                <li>
-                    <a href="index.html" class="active">Home</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <section id="divided-header">
-
-        <div class="left-side">
-            <h1> <span class="title">Budget Calculator</span> </h1>
-            <p>Visualize your income, and split your earnings into common expenses and savings goals to help you make
-                the most out of
-                your money.</p>
-        </div>
-        <div class="right-side"></div>
-
-    </section>
-    <hr>
-
-    <section>
-        <div class="Instructions">
-            <h2 id="title-2">How to use the monthly budget calculator?</h2>
-            <p class="steps">Enter estimated amounts into the fields that apply to you or your family.</p>
-            <p class="steps">Try rounding up to the nearest euro, but you can also use decimals.</p>
-            <p class="steps">Something doesn't apply to you? No worries, just fill out the fields that are relevant to
-                you.</p>
-
-        </div>
-    </section>
-    <hr>
-    <br>
-
-    <h2 id="title-2">Monthly Budget Calculator</h2>
-
-
-
-    <section id="Calculator">
        <div class="wrapper">
         <div class="container">
             <div class="sub-container">
@@ -74,21 +23,21 @@
                 </div>
 
                 <!--Expenditure-->
-                <div class="user-amount-containe">
-                    <h3>expenses</h3>
+                <div class="user-amount-container">
+                    <h3>Expenses</h3>
                     <p class="hide error" id="product-title-error">
                         Values cannot be empty
                     </p>
-                    <input type="text" class="product-title" placeholder="Enter Title of product">
-                    <input type="number" id="user-amount" placeholder="Ener Cost of Product">
+                    <input type="text" class="product-title" id="product-title" placeholder="Enter Title of Profduct"/>
+                    <input type="number" id="user-amount" placeholder="Enter Cost of Product"/>
 
                     <button class="submit" id="check-amount">Check Amount</button>
                 </div>
             </div>
             <!--Output-->
-            <div class="output-container flex-space"></div>
+            <div class="output-container flex-space">
                 <div>
-                    <p>total Budget</p>
+                    <p>Total Budget</p>
                     <span id="amount">0</span>
                 </div>
                 <div>
@@ -99,15 +48,14 @@
                     <p>Balance</p>
                     <span id="balance-amount">0</span>
                 </div>
+            </div>
         </div>
+
         <!--List-->
         <div class="list">
             <h3>Expense List</h3>
             <div class="list-container" id="list"></div>
         </div>
-
-       </div>
-    </section>
 
     <hr>
 
